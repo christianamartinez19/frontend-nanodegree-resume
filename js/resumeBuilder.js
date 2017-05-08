@@ -172,7 +172,7 @@ education.display = function() {
 
     for (var i = 0; i < education.schools.length; i++) {
         formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name);
-        $(".education-entry:last").append(formattedSchoolName);
+        $(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree);
 
         formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
         $(".education-entry:last").append(formattedSchoolDegree);
