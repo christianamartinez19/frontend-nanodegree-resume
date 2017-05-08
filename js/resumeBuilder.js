@@ -25,12 +25,15 @@ bio.display = function() {
 
     var formattedMobile = HTMLmobile.replace(/%data%/g, bio.contacts.mobile);
     $("#topContacts").append(formattedMobile);
+    $("#footerContacts").append(formattedMobile);
 
     var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
     $("#topContacts").append(formattedEmail);
+    $("#footerContacts").append(formattedEmail);
 
     var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
     $("#topContacts").append(formattedGithub);
+    $("#footerContacts").append(formattedGithub);
 
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
     $("#header").append(formattedBioPic);
@@ -63,14 +66,14 @@ var work = {
         {
             "employer": "Galli",
             "title": "General Manager",
-            "datesWorked": "2012-2016",
+            "dates": "2012-2016",
             "location": "New York City, New York ",
             "description": "Responsible for the day-to-day operations of the restaurant's payroll, invoices, accounts <br> Responsible for all social media <br> Lead coordinator for all in-house and catered events"
         },
         {
             "employer": "Forrest Partners",
             "title": "Property Manager",
-            "datesWorked": "2015-2017",
+            "dates": "2015-2017",
             "location": "New York City, New York",
             "description": "Property Manager for a portfolio of residential and commercial buildings in the Lower East Side of Manhattan."
         }
@@ -105,7 +108,7 @@ var projects = {
     "projects": [
         {
             "title": "Build a Webpage!",
-            "datesWorked": "2016",
+            "dates": "2016",
             "description": "This project was one of the first projects I have ever made using HTML and CSS. I built a webpage about my 9month journey in Southeast Asia.",
             "images": ["images/southeast_asia_vacation.jpg"]
         }
@@ -144,7 +147,7 @@ var education = {
             "degree": "Associates Degree",
             "location": "Garden City, New York",
             "majors": ["Paralegal Studies"],
-            "datesAttended": "2009-2011"
+            "dates": "2009-2011"
         }, 
     ],
     
