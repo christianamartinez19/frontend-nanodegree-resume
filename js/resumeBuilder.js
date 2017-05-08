@@ -185,7 +185,7 @@ education.display = function() {
 
         if (education.schools[i].majors.length > 0) {
 
-            for (var j; j < education.schools[i].majors.length; j++) {
+            for (var j = 0; j < education.schools[i].majors.length; j++) {
                 formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].majors[j]);
                 $(".education-entry:last").append(formattedSchoolMajor);
             }
@@ -194,7 +194,7 @@ education.display = function() {
 
     $(".education-entry:last").append(HTMLonlineClasses);
 
-    for (var k; k < education.onlineCourses.length; k++) {
+    for (var k = 0; k < education.onlineCourses.length; k++) {
         formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[k].title);
         $(".education-entry:last").append(formattedOnlineTitle);
 
