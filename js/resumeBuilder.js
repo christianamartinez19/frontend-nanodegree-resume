@@ -3,7 +3,7 @@
 var bio = {
     "name": "Christiana Martinez",
     "role": "Student",
-    "message": "Hi! I am Christiana and I am new to Web Development.",
+    "welcomeMessage": "Hi! I am Christiana and I am new to Web Development.",
     "contacts": {
         "mobile": "516-993-5691",
         "email": "christiana.martinez@gmail.com",
@@ -12,7 +12,7 @@ var bio = {
         "location": "Long Beach, New York"
     },
     "skills": ["HTML", "CSS", "Javascript", "Python"],
-    "bioPic": "images/me.jpg"
+    "biopic": "images/me.jpg"
 };
 
 bio.display = function() {
