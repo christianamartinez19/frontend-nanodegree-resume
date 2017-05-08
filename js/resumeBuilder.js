@@ -35,10 +35,10 @@ bio.display = function() {
     $("#topContacts").append(formattedGithub);
     $("#footerContacts").append(formattedGithub);
 
-    var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+    var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
     $("#header").append(formattedBioPic);
 
-    var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.message);
+    var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedWelcomeMessage);
 
     if (bio.skills.length > 0) {
@@ -90,7 +90,7 @@ work.display = function() {
         var formattedEmployerTitle = formattedEmployer + formattedJobTitle;
         $(".work-entry:last").append(formattedEmployerTitle);
         
-        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].datesWorked);
+        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
         $(".work-entry:last").append(formattedDates);
         
         var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
@@ -122,7 +122,7 @@ projects.display = function() {
         formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
         $(".project-entry:last").append(formattedProjectTitle);
 
-        formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].datesWorked);
+        formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
         $(".project-entry:last").append(formattedProjectDates);
 
         if (projects.projects[i].images.length > 0) {
@@ -177,7 +177,7 @@ education.display = function() {
         formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
         $(".education-entry:last").append(formattedSchoolDegree);
 
-        formattedDates = HTMLschoolDates.replace("%data%", education.schools[i].datesAttended);
+        formattedDates = HTMLschoolDates.replace("%data%", education.schools[i].dates);
         $(".education-entry:last").append(formattedDates);
 
         formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
