@@ -38,6 +38,10 @@ bio.display = function() {
     var formattedTwitter = HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
     $("#topContacts").append(formattedTwitter);
     $("#footerContacts").append(formattedTwitter);
+    
+    var formattedLocation = HTMLlocation.replace(/%data%/g, bio.contacts.location);
+    $("#topContacts").append(formattedLocation);
+    $("#footerContacts").append(formattedLocation);
 
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
     $("#header").append(formattedBioPic);
