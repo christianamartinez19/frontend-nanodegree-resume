@@ -194,10 +194,8 @@ education.display = function() {
 
     for (var k = 0; k < education.onlineCourses.length; k++) {
         formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[k].title);
-        $(".education-entry:last").append(formattedOnlineTitle);
-
         formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[k].school);
-        $(".education-entry:last").append(formattedOnlineSchool);
+        $(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
 
         formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[k].dates);
         $(".education-entry:last").append(formattedOnlineDates);
