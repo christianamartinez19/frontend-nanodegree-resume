@@ -34,6 +34,10 @@ bio.display = function() {
     var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
     $("#topContacts").append(formattedGithub);
     $("#footerContacts").append(formattedGithub);
+    
+    var formattedTwitter = HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
+    $("#topContacts").append(formattedTwitter);
+    $("#footerContacts").append(formattedTwitter);
 
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
     $("#header").append(formattedBioPic);
