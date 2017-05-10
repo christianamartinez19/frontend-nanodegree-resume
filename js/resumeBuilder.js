@@ -49,20 +49,8 @@ bio.display = function() {
     var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedWelcomeMessage);
 
-    if (bio.skills.length > 0) {
-
-        $("#header").append(HTMLskillsStart);
-
-        var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-        $("#skills").append(formattedSkill);
-
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-        $("#skills").append(formattedSkill);
-
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-        $("#skills").append(formattedSkill);
-
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+    for (var i = 0; i ++) {
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
         $("#skills").append(formattedSkill);
     }
 };
