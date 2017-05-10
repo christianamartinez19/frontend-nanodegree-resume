@@ -48,17 +48,14 @@ bio.display = function() {
 
     var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedWelcomeMessage);
-    
-    if (bio.skills.length > 0) {
 
-        $("#header").append(HTMLskillsStart);
-    }
-        
-        for (var i = 0; i ++) {
-            var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
-            $("#skills").append(formattedSkill);
+    $("#header").append(HTMLskillsStart)
+    for (var i = 0; i < bio.skills.length; i++) {
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
+        $("#skills").append(formattedSkill);
     }
 };
+
 
 // Work *********************************************************************************************************************************
 
