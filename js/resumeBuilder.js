@@ -48,11 +48,7 @@ bio.display = function() {
 
     var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedWelcomeMessage);
-    }
-};
-
-
-skills.display = function() {
+    
     for (var i = 0; i ++) {
         var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
         $("#skills").append(formattedSkill);
